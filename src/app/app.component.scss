@@ -1,0 +1,33 @@
+.grid-container {
+    height: 100vh;
+    position: relative;
+    background-color: black;
+}
+
+.toolbar-container {
+    height: 40px;
+    color: red;
+    position: absolute;
+    width: 100%;
+}
+.sidenav-container {
+    height: 100vh;
+    background-color: red;
+    width: 200px;
+    position: absolute;
+    top: 95px;
+    left: 0;
+    color: white;
+}
+
+.student-wrapper {
+    height: 100vh;
+    position: absolute;
+    top: 95px;
+    left: 200px;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    color: black;
+    background-color:wheat ;
+}
