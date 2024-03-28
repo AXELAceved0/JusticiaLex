@@ -1,2 +1,11 @@
-<p>student-page works!</p>
-<h1>PROXIMAMENTE</h1>
+<h1>Resultados</h1>
+
+<button [ngClass]="'boton'" (click)="mostrarListado = !mostrarListado">Ver Resultados</button>
+
+<ul *ngIf="mostrarListado">
+    <li *ngFor="let alumno of estudiantes">
+        <span [ngClass]="{'aprobado': esAprobado(alumno.nota), 'desaprobado': !esAprobado(alumno.nota)}">
+            {{ alumno.nombre }} - Nota: {{ alumno.nota | number: '1.2-2' }}
+        </span>
+    </li>
+</ul>
